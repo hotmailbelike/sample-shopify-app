@@ -46,7 +46,10 @@ const ProductList = () => {
 
 	return (
 		<div>
-			<h1>Product List</h1>
+			<h1>Selected Products</h1>
+			{data.nodes.map((item) => (
+				<p key={item.id}>{item.title}</p>
+			))}
 		</div>
 	);
 };
