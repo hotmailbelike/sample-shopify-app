@@ -26,8 +26,9 @@ const Index = () => {
 				onCancel={() => setModal({ open: false })}
 				onSelection={(resources) => handleSelection(resources)}
 			></ResourcePicker>
-			<Layout>
-				{emptyState ? (
+
+			{emptyState ? (
+				<Layout>
 					<EmptyState
 						heading='Manage your inventory transfers'
 						action={{
@@ -38,10 +39,10 @@ const Index = () => {
 					>
 						<p>Select Products</p>
 					</EmptyState>
-				) : (
-					<ProductList></ProductList>
-				)}
-			</Layout>
+				</Layout>
+			) : (
+				<ProductList></ProductList>
+			)}
 		</Page>
 	);
 };
