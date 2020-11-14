@@ -64,7 +64,7 @@ const Script = () => {
 					</Card>
 				</Layout.Section>
 				<Layout.Section secondary>
-					<Card sectioned title='Delete Tag'>
+					<Card sectioned title='Create Tag'>
 						<Button
 							primary
 							size='slim'
@@ -73,7 +73,7 @@ const Script = () => {
 								createScript({
 									variables: {
 										input: {
-											src: 'https://a69f78d62ab8.ngrok.io/test-script.js',
+											src: 'https://3bef80529396.ngrok.io/test-script.js',
 											displayScope: 'ALL',
 										},
 									},
